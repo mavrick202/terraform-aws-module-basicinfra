@@ -9,3 +9,13 @@ output "subnet2" {
 output "subnet3" {
   value = "${aws_subnet.subnet3-public.id}"
 }
+
+output "subnet4" {
+  value = "${aws_subnet.subnet4-public.id}"
+}
+
+output "sgroup" {
+  value = "${aws_security_group.allow_all.id}"
+}
+
+
