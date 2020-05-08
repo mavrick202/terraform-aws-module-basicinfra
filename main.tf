@@ -44,6 +44,17 @@ resource "aws_subnet" "subnet3-public" {
 	
 }
 
+resource "aws_subnet" "subnet4-public" {
+    vpc_id = "${aws_vpc.default.id}"
+    cidr_block = "${var.public_subnet4_cidr}"
+    availability_zone = "us-east-1d"
+
+    tags = {
+        Name = "${var.public_subnet4_name}"
+    }
+	
+}
+
 
 resource "aws_route_table" "terraform-public" {
     vpc_id = "${aws_vpc.default.id}"
