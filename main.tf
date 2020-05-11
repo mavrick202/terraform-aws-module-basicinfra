@@ -22,23 +22,24 @@ Main_Routing_Table = "Terraform_Main_table-testing"
 key_name = "LaptopKey"
 }
 
-output "subnet1-public" {
-  value = "${module.VPC1.subnet1}"
-}
-output "subnet2-public" {
-  value = "${module.VPC1.subnet2}"
-}
-output "subnet3-public" {
-  value = "${module.VPC1.subnet3}"
-}
+# ONLY UNCOMMENT IF YOU WANT TO DISPLAY BELOW OUTPUTS ON THE SCREEN AFTER APPLY.
+# output "subnet1-public" {
+#   value = "${module.VPC1.subnet1}"
+# }
+# output "subnet2-public" {
+#   value = "${module.VPC1.subnet2}"
+# }
+# output "subnet3-public" {
+#   value = "${module.VPC1.subnet3}"
+# }
 
-output "subnet4-public" {
-  value = "${module.VPC1.subnet3}"
-}
+# output "subnet4-public" {
+#   value = "${module.VPC1.subnet3}"
+# }
 
-output "sgroup" {
-  value = "${module.VPC1.sgroup}"
-}
+# output "sgroup" {
+#   value = "${module.VPC1.sgroup}"
+# }
 
 
 
